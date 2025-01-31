@@ -4,6 +4,7 @@ import { SuperheroesService } from './superheroes.service';
 
 describe('SuperheroesController', () => {
   let controller: SuperheroesController;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let service: SuperheroesService;
 
   beforeEach(async () => {
