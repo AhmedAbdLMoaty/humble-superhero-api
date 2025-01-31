@@ -95,7 +95,7 @@ humble-superhero-project/
 
 ---
 
-### ⏱ If I Had More Time...  
+## ⏱ If I Had More Time...  
 If I had more time, I would take this project to the next level by adding features that enhance both functionality and user experience.  
 1️⃣ **Persistent Storage** – Right now, we're using an in-memory database, which means data disappears when the server restarts. I’d integrate a real database like **PostgreSQL** or **MongoDB** to make superhero data permanent.  
 2️⃣ **Authentication & User Roles** – Adding superheroes is fun, but what if users could create accounts, save their favorite heroes, and even upvote humility scores? A secure **JWT-based authentication system** would allow role-based access (admin vs. regular users).  
