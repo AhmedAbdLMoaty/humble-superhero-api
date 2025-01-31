@@ -19,21 +19,38 @@ const SuperheroForm: React.FC<SuperheroFormProps> = ({ onAddHero }) => {
             return;
         }
 
-        const newHero: Superhero = { name, superpower, humilityScore };
-
         try {
-            const response = await fetch("http://localhost:3000/superheroes", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(newHero),
-            });
-
+            const response = await fetch("http://localhost:3000/superheroes");
             if (!response.ok) {
-                const error = await response.json();
+                throw new Error("Failed to fetch heroes.");
+            }
+            const heroes: Superhero[] = await response.json();
+            const isDuplicate = heroes.some(
+                (hero) => hero.name.toLowerCase() === name.toLowerCase()
+            );
+
+            if (isDuplicate) {
+                alert("A hero with this name already exists.");
+                return;
+            }
+
+            const newHero: Superhero = { name, superpower, humilityScore };
+
+            const createResponse = await fetch(
+                "http://localhost:3000/superheroes",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(newHero),
+                }
+            );
+
+            if (!createResponse.ok) {
+                const error = await createResponse.json();
                 throw new Error(error.message || "Failed to add hero.");
             }
 
-            const createdHero = await response.json();
+            const createdHero = await createResponse.json();
             onAddHero(createdHero);
 
             setName("");
