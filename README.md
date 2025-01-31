@@ -92,6 +92,10 @@ humble-superhero-project/
 - **Pair Programming**: Share knowledge in real-time and tackle tricky parts together.
 - **Documentation**: Keep READMEs and inline comments helpful for quick onboarding.
 - **Continuous Learning**: Experiment with features (like Docker, real DB) as time allows.
+## **👥 Clear Communication & Feedback**  
+- **Well-structured Git commits** with meaningful messages (`feat: added superhero ranking system`).  
+- **Pull requests with detailed descriptions**, explaining what’s changed and why.  
+- **Constructive code reviews**—not just pointing out mistakes, but suggesting improvements and learning from others.  
 
 ---
 
@@ -102,6 +106,8 @@ If I had more time, I would take this project to the next level by adding featur
 3️⃣ **Better UI & Animations** – While the frontend is clean, I’d refine it with **smoother animations** (Framer Motion) and a more polished UI (Material-UI or Tailwind). Maybe even a **dark mode toggle**!  
 4️⃣ **Deployment & CI/CD** – Right now, this project runs locally. I’d set up **CI/CD pipelines** (GitHub Actions) for automated testing, then deploy the backend (AWS, Heroku) and frontend (Vercel, Netlify) so anyone can use it live.  
 5️⃣ **More Superhero Actions** – Instead of just adding heroes, why not **edit, delete, or rank them in a leaderboard**? A voting system where users nominate the **most humble hero of the month** could be fun.  
+
+## Also, I thought about adding Hero Ranking and descriptions, and even Avatars for them.
 
 👉 There’s always room for improvement, and given more time, I’d turn this into a **fully scalable, production-ready superhero hub**! 🚀✨
 
