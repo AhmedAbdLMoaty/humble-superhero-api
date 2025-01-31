@@ -57,7 +57,7 @@ const SuperheroForm: React.FC<SuperheroFormProps> = ({ onAddHero }) => {
         setHumilityScore(Number(e.target.value));
 
     return (
-        <form onSubmit={handleSubmit} className="superhero-form">
+        <form onSubmit={handleSubmit} className="superhero-form" noValidate>
             <h2>Add a New Superhero</h2>
             <input
                 type="text"

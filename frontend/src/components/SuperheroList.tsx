@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Superhero, SuperheroListProps } from "../types";
+import { FaUserShield } from "react-icons/fa";
 
 const SuperheroList: React.FC<SuperheroListProps> = ({ newHeroAdded }) => {
     const [heroes, setHeroes] = useState<Superhero[]>([]);
@@ -13,7 +14,7 @@ const SuperheroList: React.FC<SuperheroListProps> = ({ newHeroAdded }) => {
             }
             const data: Superhero[] = await response.json();
             setHeroes(data);
-        } catch (error: unknown) {
+        } catch (error) {
             console.error("Error fetching heroes:", error);
             alert("Error fetching heroes.");
         }
@@ -38,6 +39,11 @@ const SuperheroList: React.FC<SuperheroListProps> = ({ newHeroAdded }) => {
                             className="hero-item"
                         >
                             <span className="hero-info">
+                                <FaUserShield
+                                    size={24}
+                                    color="#ffcc00"
+                                    style={{ marginRight: "8px" }}
+                                />
                                 <strong>{hero.name}</strong> - {hero.superpower}
                             </span>
                             <motion.span

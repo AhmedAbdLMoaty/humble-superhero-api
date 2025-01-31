@@ -14,14 +14,14 @@ const App: React.FC = () => {
     return (
         <div className="App">
             <header>
-                <h1>Humble Superhero App</h1>
+                <h1>⚡ Superhero Nexus ⚡</h1>
             </header>
             <main>
                 <SuperheroForm onAddHero={handleAddHero} />
                 <SuperheroList newHeroAdded={newHero} />
             </main>
             <footer>
-                <p>© 2025 Humble Superhero Project</p>
+                <p>© 2025 Superhero Nexus</p>
             </footer>
         </div>
     );
