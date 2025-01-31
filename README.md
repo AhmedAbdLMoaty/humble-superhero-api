@@ -53,7 +53,7 @@ humble-superhero-project/
 ## ⚡ Quick Start
 1. **Clone Repo**  
    ```bash
-   git clone https://github.com/your-username/humble-superhero-project.git
+   git clone https://github.com/AhmedAbdLMoaty/humble-superhero-api.git
    ```
 2. **Install Backend**  
    ```bash
