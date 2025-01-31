@@ -1,0 +1,51 @@
+.superhero-list {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 500px;
+    border: 1px solid #4cc9f0;
+    transition: transform 0.5s ease;
+}
+
+.superhero-list h2 {
+    color: #4cc9f0;
+    font-weight: bold;
+}
+
+.hero-item {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin: 12px 0;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #4cc9f0;
+    transition: transform 0.5s ease;
+}
+
+.hero-item:hover {
+    transform: scale(1.05);
+}
+
+.notification {
+    background: #3a86ff;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
